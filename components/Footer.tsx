@@ -45,9 +45,9 @@ const Footer = () => {
             </Link>
           </li>
         </ul>
-      <h6 className="mx-auto col-span-3 text-gray-400 text-xs">
-        © ClubFeedbox, All Rights Reserved 2023
-      </h6>
+        <h6 className="mx-auto col-span-3 text-gray-400 text-xs">
+          © ClubFeedbox, All Rights Reserved 2023
+        </h6>
       </div>
     </>
   );
