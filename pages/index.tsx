@@ -1,10 +1,7 @@
-// import { Inter } from "next/font/google";
-// import Navbar from "../components/Navbar";
-// import Footer from "../components/Footer";
-
 import UpcomingEve from "@/components/Events/UpcomingEve";
 import Header from "@/components/Story/Header";
 import Timeline from "@/components/Story/Timeline";
+import Footer from "@/components/Footer";
 
 export default function Home() {
 	return (
@@ -21,6 +18,7 @@ export default function Home() {
 			<div className="">
 				<UpcomingEve />
 			</div>
+      <Footer/>
 		</>
 	);
 }
