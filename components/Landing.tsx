@@ -17,7 +17,8 @@ const Landing = () => {
               className="font-inter text-white drop-shadow-2xl md:text-6xl"
               style={{ fontWeight: 900 }}
             >
-              Welcome To <br />FeedBox Club
+              Welcome To <br />
+              FeedBox Club
             </h1>
             <p className="text-xs md:text-base text-white">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis,
