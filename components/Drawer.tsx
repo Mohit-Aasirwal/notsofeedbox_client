@@ -16,7 +16,7 @@ const Drawer = () => {
   };
 
   return (
-    <div className="relative sm:flex md:hidden">
+    <div className="fixed z-50 w-96 sm:flex md:hidden">
       <button
         className="text-black p-2 mx-4 my-5 rounded-full bg-white"
         onClick={handleOpen}
@@ -54,7 +54,7 @@ const Drawer = () => {
             <li>
               <Link
                 href={"#Contact"}
-                className="font-bold text-lg bg-[#B8F7D4] py-2 px-4 -mx-3 hover:bg-white delay-150 ease-linear rounded-full"
+                className="font-bold text-lg bg-[#003865] text-white hover:text-black py-2 px-4 -mx-3 hover:bg-white delay-150 ease-linear rounded-full"
               >
                 Contact
               </Link>

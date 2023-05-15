@@ -4,7 +4,7 @@ function Header() {
 	return (
 		<>
 			<div className="img_bg gradient w-full md:h-[90vh] h-[50vh] font-sans">
-				<h1 className="font-bold text-4xl text-white relative top-[20%] lg:left-[20%] md:left-[10%] left-[8%]">
+				<h1 className="font-bold text-4xl z-0 text-white relative top-[20%] lg:left-[20%] md:left-[10%] left-[8%]">
 					Our Club Story
 				</h1>
 				<p className="text-white relative font-extralight text-sm top-[22%] lg:left-[20%] md:left-[10%] left-[8%] lg:max-w-sm max-w-[17rem]">
