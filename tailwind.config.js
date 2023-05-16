@@ -16,6 +16,7 @@ module.exports = {
         sans: ["Nunito Sans", "sans-serif"],
         seriff: ["Oswald", "sans-serif"],
         inter: ["Inter", "sans-serif"],
+        poppins: ["Poppins", "sans-serif"],
       },
     },
     colors: {

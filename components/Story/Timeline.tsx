@@ -3,7 +3,7 @@ import React from "react";
 function Timeline() {
 	return (
 		<>
-			<ol className="pt-[10%] pl-[10%] md:h-[80vh] h-[50vh] overflow-y-scroll">
+			<ol className="pt-[10%] pl-[10%] md:h-[80vh] md:w-1/2 h-[50vh] overflow-y-scroll">
 				<li className="border-l-2">
 					<div className="md:flex flex-start">
 						<div className="w-6 h-6 flex bg-black items-center justify-center rounded-full -ml-3.5"></div>

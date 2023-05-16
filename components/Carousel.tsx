@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React, { useState } from "react";
 
-const Carousel = ({ images }) => {
+const Carousel = ({ images:any }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const handleNext = () => {

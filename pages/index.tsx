@@ -12,7 +12,7 @@ import ConditionalRender from "@/layouts/ConditionalRender";
 import Window from "@/layouts/Window"
 export default function Home() {
   return (
-    <>
+    <div className="">
     {/* <Window/> */}
       {/* <Navbar />
 	  <Drawer/>
@@ -35,6 +35,6 @@ export default function Home() {
       </div>
       <Contact />
       <Footer /> */}
-    </>
+    </div>
   );
 }
