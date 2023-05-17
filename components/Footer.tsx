@@ -17,14 +17,14 @@ const Footer = () => {
           <Image src={"/logo.png"} width={100} height={100} alt="logo" />
         </Link>
         <h1 className="font-bold mx-2 text-xl md:hidden">Quick Links</h1>
-        <ul className="mx-4 md:mx-auto font-semibold hover:underline md:flex md:space-x-8 md:my-auto text-[#151B31]">
-          <li>
+        <ul className="mx-4 md:mx-auto font-semibold  md:flex md:space-x-8 md:my-auto text-[#151B31]">
+          <li className="hover:underline">
             <Link href={"/"}>Home</Link>
           </li>
-          <li>
+          <li className="hover:underline">
             <Link href={"#About"}>About</Link>
           </li>
-          <li>
+          <li className="hover:underline">
             <Link href={"#Contact"}>Contact</Link>
           </li>
         </ul>
