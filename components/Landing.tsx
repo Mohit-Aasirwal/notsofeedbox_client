@@ -25,7 +25,7 @@ const Landing = () => {
               maxime.
             </p>
             <button className="rounded-full hover:bg-secondary delay-150 flex w-fit bg-white py-2 px-3">
-              <Link href={"#About"} className="hover:translate-x-1">
+              <Link href={"#About"} className="">
                 Learn What&apos;s Next
                 <p className="inline-flex">→</p>
               </Link>

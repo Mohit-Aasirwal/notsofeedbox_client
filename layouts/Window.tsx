@@ -6,7 +6,7 @@
 import React, { useEffect, useState } from "react";
 
 const MyComponent = () => {
-  const [windowWidth, setWindowWidth] = useState(0);
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   useEffect(() => {
     const handleResize = () => {

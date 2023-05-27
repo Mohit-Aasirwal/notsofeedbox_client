@@ -6,7 +6,7 @@ function UpcomingEve() {
   return (
     <>
       <div className="grid md:grid-cols-2 grid-cols-1 md:h-[70vh] h-full">
-        <div className="flex md:w-1/3 md:space-x-8 md:mx-20 space-x-5 items-center">
+        <div className="flex md:space-x-8 md:mx-20 space-x-5 items-center">
           <Image
             src="/calendar.svg"
             width={39}
@@ -22,8 +22,8 @@ function UpcomingEve() {
             height={300}
           />
         </div>
-        <div className="h-full md:w-2/3 space-y-8 flex flex-col items-center justify-center">
-          <div className="md:h-[60%] h-full w-auto overflow-y-scroll">
+        <div className="h-full space-y-8 flex flex-col items-center justify-center">
+          <div className="md:h-[80%] h-full w-full overflow-y-scroll">
             <Lists />
             <Lists />
             <Lists />
