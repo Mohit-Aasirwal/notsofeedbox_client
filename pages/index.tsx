@@ -12,7 +12,7 @@ import ConditionalRender from "@/layouts/ConditionalRender";
 import Window from "@/layouts/Window";
 export default function Home() {
   return (
-    <div className="" id="wrapper">
+    <div className="" >
       {/* <Window/> */}
       {/* <Navbar />
 	  <Drawer/>

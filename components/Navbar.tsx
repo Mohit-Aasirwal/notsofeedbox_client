@@ -5,7 +5,7 @@ import Image from "next/image";
 const Navbar = () => {
   return (
     <>
-      <nav className="fixed my-5 z-50 w-full">
+      <nav className="fixed my-5 z-50 w-full drop-shadow-xl">
         <div className="hidden md:flex mx-10 items-center justify-between bg-white rounded-xl h-16">
           <Link href={"#Landing"}>
             {" "}

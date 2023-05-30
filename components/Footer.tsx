@@ -9,7 +9,7 @@ import Image from "next/image";
 const Footer = () => {
   return (
     <>
-      <div className="w-full md:h-1/5 flex flex-col md:grid md:grid-cols-3 bg-white">
+      <div className="w-full md:h-1/5 flex flex-col md:grid md:grid-cols-3 md:my-10 bg-white">
         <Link
           href={"https://www.feedbox.co.in"}
           className="mx-auto md:mx-5 md:my-auto"

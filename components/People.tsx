@@ -28,24 +28,24 @@ const People = () => {
   //   return () => clearInterval(interval);
   // });
   return (
-    <div className="bg-[#00C2FF] mx-10 rounded-3xl  " id="style-3">
+    <div className="bg-[#00C2FF] mx-10 rounded-3xl" id="People">
       <h1 className="text-4xl text-white font-bold px-16 pt-10">Our Team</h1>
       <p className="text-white px-16 py-5">
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum,
         minus!
       </p>
       <div className="grid grid-flow-col overflow-x-scroll space-x-10 my-10">
-        <div className="rounded-full ml-20 w-40 h-40 bg-black"></div>
-        <div className="rounded-full w-40 h-40 bg-black"></div>
-        <div className="rounded-full w-40 h-40 bg-black"></div>
-        <div className="rounded-full w-40 h-40 bg-black"></div>
-        <div className="rounded-full w-40 h-40 bg-black"></div>
-        <div className="rounded-full w-40 h-40 bg-black"></div>
-        <div className="rounded-full w-40 h-40 bg-black"></div>
-        <div className="rounded-full w-40 h-40 bg-black"></div>
-        <div className="rounded-full w-40 h-40 bg-black"></div>
-        <div className="rounded-full w-40 h-40 bg-black"></div>
-        <div className="rounded-full w-40 h-40 bg-black"></div>
+        <div className="rounded-full ml-20 w-40 h-40 bg-white"></div>
+        <div className="rounded-full w-40 h-40 bg-white"></div>
+        <div className="rounded-full w-40 h-40 bg-white"></div>
+        <div className="rounded-full w-40 h-40 bg-white"></div>
+        <div className="rounded-full w-40 h-40 bg-white"></div>
+        <div className="rounded-full w-40 h-40 bg-white"></div>
+        <div className="rounded-full w-40 h-40 bg-white"></div>
+        <div className="rounded-full w-40 h-40 bg-white"></div>
+        <div className="rounded-full w-40 h-40 bg-white"></div>
+        <div className="rounded-full w-40 h-40 bg-white"></div>
+        <div className="rounded-full w-40 h-40 bg-white"></div>
       </div>
       {/* <div className="carousel">
         <div

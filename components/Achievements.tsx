@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const Achievements = () => {
   return (
-    <div className="flex flex-col my-10">
+    <div className="flex flex-col my-10" id="Achievements">
       <Image
         src={"/ach-logo.svg"}
         alt="logo"

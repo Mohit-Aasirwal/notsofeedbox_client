@@ -5,7 +5,7 @@ import Lists from "./Lists";
 function UpcomingEve() {
   return (
     <>
-      <div className="grid md:grid-cols-2 grid-cols-1 md:h-[70vh] h-full">
+      <div className="grid md:grid-cols-2 grid-cols-1 md:h-[70vh] h-full" id="Events">
         <div className="flex md:space-x-8 md:mx-20 space-x-5 items-center">
           <Image
             src="/calendar.svg"
