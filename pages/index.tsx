@@ -9,11 +9,11 @@ import Navbar from "@/components/Navbar";
 import Landing from "@/components/Landing";
 import Drawer from "@/components/Drawer";
 import ConditionalRender from "@/layouts/ConditionalRender";
-import Window from "@/layouts/Window"
+import Window from "@/layouts/Window";
 export default function Home() {
   return (
-    <div className="">
-    {/* <Window/> */}
+    <div className="" id="wrapper">
+      {/* <Window/> */}
       {/* <Navbar />
 	  <Drawer/>
       <Landing />
