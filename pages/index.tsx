@@ -10,9 +10,31 @@ import Landing from "@/components/Landing";
 import Drawer from "@/components/Drawer";
 import ConditionalRender from "@/layouts/ConditionalRender";
 import Window from "@/layouts/Window";
+import { useState, useEffect } from "react";
+
 export default function Home() {
+  // useEffect(() => {
+  //   // Track mouse movement
+  //   const handleMouseMove = (event: any) => {
+  //     const cursor = document.querySelector(".custom-cursor");
+  //     if (cursor) {
+  //       cursor.style.top = `${event.pageY}px`;
+  //       cursor.style.left = `${event.pageX}px`;
+  //     }
+  //   };
+
+  //   document.addEventListener("mousemove", handleMouseMove);
+
+  //   return () => {
+  //     // Clean up the event listener
+  //     document.removeEventListener("mousemove", handleMouseMove);
+  //   };
+  // }, []);
+
   return (
-    <div className="" >
+    <div
+    // className={"custom-cursor"}
+    >
       {/* <Window/> */}
       {/* <Navbar />
 	  <Drawer/>

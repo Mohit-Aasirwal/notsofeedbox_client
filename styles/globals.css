@@ -223,3 +223,16 @@ svg {
   top: 50%;
   transform: translate(-50%, -50%);
 } */
+
+/* custom cursor properties */
+.custom-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  width: 32px;
+  height: 32px;
+  background-image: url("../public/cursor.png");
+  background-size: cover;
+  z-index: 9999;
+}
