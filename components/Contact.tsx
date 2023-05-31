@@ -1,6 +1,10 @@
 import React, { useState } from "react";
 import Image from "next/image";
+import { delay, motion } from "framer-motion";
+import ConnectText from "@/public/ConnectText";
+
 const Contact = () => {
+  //useState Hooks
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
@@ -28,8 +32,29 @@ const Contact = () => {
     setMessage("");
   };
 
+  //animation logic
+  const animation = {
+    initial: {
+      opacity: 0,
+    },
+    whileInView: {
+      opacity: 1,
+      transition: {
+        duration: 1,
+        delay: 1,
+      },
+    },
+  };
+
+  //component
   return (
-    <div className="grid md:grid-cols-2 grid-cols-1 bg-[#003865]" id="Contact">
+    <motion.div
+      variants={animation}
+      initial="initial"
+      whileInView="whileInView"
+      className="grid md:grid-cols-2 grid-cols-1 bg-[#003865]"
+      id="Contact"
+    >
       <div className="top-0 left-0 relative">
         <Image
           priority
@@ -39,14 +64,17 @@ const Contact = () => {
           height={50}
           className="w-full h-screen "
         />
-        <Image
-          priority
-          src={"/connecttext.svg"}
-          alt="connecttext"
-          width={200}
-          height={200}
-          className="absolute md:top-1/3 md:left-1/3 xl:w-96 w-80 "
-        />
+        <div className="absolute md:top-1/3 md:left-1/3 xl:w-96 w-80 ">
+          {/* <Image
+            priority
+            src={"/connecttext.svg"}
+            alt="connecttext"
+            width={200}
+            height={200}
+            className="absolute md:top-1/3 md:left-1/3 xl:w-96 w-80 "
+          /> */}
+          <ConnectText/>
+        </div>
       </div>
 
       <div>
@@ -96,14 +124,14 @@ const Contact = () => {
           <div className="mx-10">
             <button
               type="submit"
-              className="w-full border border-white text-white py-4 my-5 hover:bg-gradient-to-tr from-primary to-secondary hover:text-black rounded-full"
+              className="w-full border border-white text-white py-4 my-5 hover:bg-gradient-to-r from-primary to-secondary hover:text-black rounded-full"
             >
               Submit
             </button>
           </div>
         </form>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
