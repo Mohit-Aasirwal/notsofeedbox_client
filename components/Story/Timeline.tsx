@@ -25,13 +25,14 @@ function Timeline() {
           variants={animation}
           initial="initial"
           whileInView="whileInView"
+          // whileHover={{scale:1.1}}
           className="border-l-2"
         >
           <div className="md:flex flex-start">
             <div className="w-6 h-6 flex bg-black items-center justify-center rounded-full -ml-3.5"></div>
             <div className="block lg:p-6 md:px-0 p-6 max-w-lg  ml-2 md:mb-10 mb-1 font-semibold group duration-300 transition ease-in">
               <div className="flex justify-between mb-4">
-                <h2 className="text-lg group-hover:text-xl group-hover:font-bold group-hover:text-secondary duration-300 group-hover:transition ease-in-out">
+                <h2 className="text-lg group-hover:font-bold group-hover:text-secondary duration-300 group-hover:transition ease-in-out">
                   We Have An International Academic Community
                 </h2>
               </div>
@@ -54,7 +55,7 @@ function Timeline() {
             <div className="w-6 h-6 flex bg-black items-center justify-center rounded-full -ml-3.5"></div>
             <div className="block lg:p-6 md:px-0 p-6 max-w-lg  ml-2 md:mb-10 mb-1 font-semibold group duration-300 transition ease-in">
               <div className="flex justify-between mb-4">
-                <h2 className="text-lg group-hover:text-xl group-hover:font-bold group-hover:text-secondary duration-300 group-hover:transition ease-in-out">
+                <h2 className="text-lg  group-hover:font-bold group-hover:text-secondary duration-300 group-hover:transition ease-in-out">
                   We Have An International Academic Community
                 </h2>
               </div>
@@ -77,7 +78,7 @@ function Timeline() {
             <div className="w-6 h-6 flex bg-black items-center justify-center rounded-full -ml-3.5"></div>
             <div className="block lg:p-6 md:px-0 p-6 max-w-lg ml-2 md:mb-10 mb-1 font-semibold group duration-300 transition ease-in">
               <div className="flex justify-between mb-4">
-                <h2 className="text-lg group-hover:text-xl group-hover:font-bold group-hover:text-secondary duration-300 group-hover:transition ease-in-out">
+                <h2 className="text-lg  group-hover:font-bold group-hover:text-secondary duration-300 group-hover:transition ease-in-out">
                   We Have An International Academic Community
                 </h2>
               </div>
