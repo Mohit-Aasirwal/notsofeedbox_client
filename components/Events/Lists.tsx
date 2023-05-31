@@ -1,9 +1,31 @@
 import React from "react";
+import { motion } from "framer-motion";
+
+const divVariants = {
+  hidden: {
+    opacity: 0,
+    x: "-100vw",
+  },
+  visible: {
+    opacity: 1,
+    x: 0,
+    transition: {
+      type: "spring",
+      delay: 0.5,
+    },
+  },
+};
 
 function Lists() {
   return (
     <>
-      <div className="flex w-[100vw] md:w-full space-x-6 items-center justify-center border-b-dashed border-b pb-3 border-b-neutral/50">
+      <motion.div
+        variants={divVariants}
+        initial="hidden"
+        animate="visible"
+        whileHover={{ scale: 1.09 }}
+        className="flex w-[100vw] md:w-full space-x-6 items-center justify-center border-b-dashed border-b pb-3 border-b-neutral/50"
+      >
         <div className="flex flex-col items-center justify-center text-primary">
           <h3 className="font-medium font-inter capitalize md:text-lg flex items-center justify-center text-center tracking-widest">
             May
@@ -20,7 +42,7 @@ function Lists() {
             Outdoor Spaces, 600 - Malesardi Quadrangle
           </h3>
         </div>
-      </div>
+      </motion.div>
     </>
   );
 }
