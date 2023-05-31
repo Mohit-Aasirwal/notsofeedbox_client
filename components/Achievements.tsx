@@ -1,10 +1,17 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 const Achievements = () => {
   return (
-    <div className="flex flex-col my-10" id="Achievements">
+    <motion.div
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ delay: 0.5, duration: 2 }}
+      className="flex flex-col my-10"
+      id="Achievements"
+    >
       <Image
         src={"/ach-logo.svg"}
         alt="logo"
@@ -52,7 +59,7 @@ const Achievements = () => {
           className="w-3/4 mx-auto rounded-xl -my-2 xl:-my-3"
         />
       </div>
-    </div>
+    </motion.div>
   );
 };
 

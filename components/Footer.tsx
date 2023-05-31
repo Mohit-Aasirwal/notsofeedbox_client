@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React from "react";
+import { motion } from "framer-motion";
 import {
   AiOutlineInstagram,
   AiOutlineTwitter,
@@ -18,32 +19,53 @@ const Footer = () => {
         </Link>
         <h1 className="font-bold mx-2 text-xl md:hidden">Quick Links</h1>
         <ul className="mx-4 md:mx-auto font-semibold  md:flex md:space-x-8 md:my-auto text-[#151B31]">
-          <li className="hover:underline">
+          <motion.li
+            transition={{ delay: 0.1, duration: 0.1 }}
+            whileHover={{ scale: 1.2 }}
+            className="hover:underline"
+          >
             <Link href={"/"}>Home</Link>
-          </li>
-          <li className="hover:underline">
+          </motion.li>
+          <motion.li
+            transition={{ delay: 0.1, duration: 0.1 }}
+            whileHover={{ scale: 1.2 }}
+            className="hover:underline"
+          >
             <Link href={"#About"}>About</Link>
-          </li>
-          <li className="hover:underline">
+          </motion.li>
+          <motion.li
+            transition={{ delay: 0.1, duration: 0.1 }}
+            whileHover={{ scale: 1.2 }}
+            className="hover:underline"
+          >
             <Link href={"#Contact"}>Contact</Link>
-          </li>
+          </motion.li>
         </ul>
         <ul className="flex justify-center items-center md:justify-center md:items-start md:my-auto space-x-5 my-5">
-          <li>
+          <motion.li
+            transition={{ delay: 0.1, duration: 0.1 }}
+            whileHover={{ scale: 1.2 }}
+          >
             <Link href={"/"}>
               <AiOutlineInstagram className="w-7 h-7" />
             </Link>
-          </li>
-          <li>
+          </motion.li>
+          <motion.li
+            transition={{ delay: 0.1, duration: 0.1 }}
+            whileHover={{ scale: 1.2 }}
+          >
             <Link href={"/"}>
               <AiOutlineTwitter className="w-7 h-7" />
             </Link>
-          </li>
-          <li>
+          </motion.li>
+          <motion.li
+            transition={{ delay: 0.1, duration: 0.1 }}
+            whileHover={{ scale: 1.2 }}
+          >
             <Link href={"/"}>
               <AiOutlineGithub className="w-7 h-7" />
             </Link>
-          </li>
+          </motion.li>
         </ul>
         <h6 className="mx-auto col-span-3 text-gray-400 text-xs">
           © ClubFeedbox, All Rights Reserved 2023

@@ -32,6 +32,7 @@ const Contact = () => {
     <div className="grid md:grid-cols-2 grid-cols-1 bg-[#003865]" id="Contact">
       <div className="top-0 left-0 relative">
         <Image
+          priority
           src={"/contact.svg"}
           alt="contact"
           width={50}
@@ -39,6 +40,7 @@ const Contact = () => {
           className="w-full h-screen "
         />
         <Image
+          priority
           src={"/connecttext.svg"}
           alt="connecttext"
           width={200}
@@ -94,7 +96,7 @@ const Contact = () => {
           <div className="mx-10">
             <button
               type="submit"
-              className="w-full border border-white text-white py-4 my-5 hover:bg-gradient-to-tr from-[#00ff00] to-white hover:text-black rounded-full"
+              className="w-full border border-white text-white py-4 my-5 hover:bg-gradient-to-tr from-primary to-secondary hover:text-black rounded-full"
             >
               Submit
             </button>

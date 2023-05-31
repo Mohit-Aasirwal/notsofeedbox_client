@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
+
 const Navbar = () => {
   return (
     <>
@@ -9,11 +10,12 @@ const Navbar = () => {
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ delay: 0.5, duration: 2 }}
+          transition={{ delay: 1.5, duration: 2 }}
           className="hidden md:flex mx-10 items-center justify-between bg-white rounded-xl h-16"
         >
           <Link href={"#Landing"}>
             <Image
+              priority
               src={"/logo.png"}
               width={100}
               height={100}
@@ -50,9 +52,15 @@ const Navbar = () => {
             >
               <Link href={"#People"}>People</Link>
             </motion.li>
-            <motion.li
+            <motion.button
+              type="button"
               transition={{ delay: 0.1, duration: 0.1 }}
-              whileHover={{ scale: 1.2 }}
+              whileInView={{ textShadow: "0px 0px 8px rgb(255,255,255)" }}
+              whileHover={{
+                scale: 1.2,
+                // textShadow: "0px 0px 8px rgb(255,255,255)",
+                boxShadow: "0px 0px 8px rgb(255,255,255)",
+              }}
             >
               <Link
                 href={"#Contact"}
@@ -60,10 +68,10 @@ const Navbar = () => {
               >
                 Contact
               </Link>
-            </motion.li>
+            </motion.button>
           </ul>
         </motion.div>
-      </nav>{" "}
+      </nav>
     </>
   );
 };
