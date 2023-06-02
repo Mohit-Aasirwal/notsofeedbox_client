@@ -11,7 +11,7 @@ import Drawer from "@/components/Drawer";
 import ConditionalRender from "@/layouts/ConditionalRender";
 import Window from "@/layouts/Window";
 import { useState, useEffect } from "react";
-
+import Head from "next/head";
 export default function Home() {
   // useEffect(() => {
   //   // Track mouse movement
@@ -32,24 +32,30 @@ export default function Home() {
   // }, []);
 
   return (
-    <div
-    // className={"custom-cursor"}
-    >
-      {/* <Window/> */}
-      {/* <Navbar />
+    <>
+      <Head>
+        <title>Club FeedBox</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
+
+      <div
+      // className={"custom-cursor"}
+      >
+        {/* <Window/> */}
+        {/* <Navbar />
 	  <Drawer/>
       <Landing />
       <About />
       <Achievement /> */}
-      <ConditionalRender />
-      {/* Story Section */}
-      {/* <div className="w-full border border-black">
+        <ConditionalRender />
+        {/* Story Section */}
+        {/* <div className="w-full border border-black">
         <div className="grid md:grid-cols-2 grid-cols-1 overflow-hidden lg:h-[90vh] h-auto"> */}
-      {/* Story Header */}
-      {/* <Header /> */}
-      {/* Story Time
+        {/* Story Header */}
+        {/* <Header /> */}
+        {/* Story Time
           line */}
-      {/* <Timeline />
+        {/* <Timeline />
         </div>
       </div>
       <div className="">
@@ -57,6 +63,7 @@ export default function Home() {
       </div>
       <Contact />
       <Footer /> */}
-    </div>
+      </div>
+    </>
   );
 }

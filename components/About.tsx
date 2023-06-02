@@ -11,7 +11,7 @@ const variants = {
     opacity: 1,
     transition: {
       delay: 1.5,
-      duration: 2,
+      duration: 1,
       type: "spring",
       stiffness: 1000,
     },

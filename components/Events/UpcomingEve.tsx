@@ -1,11 +1,18 @@
 import Image from "next/image";
 import React from "react";
 import Lists from "./Lists";
+import { motion } from "framer-motion";
 
 function UpcomingEve() {
   return (
     <>
-      <div className="grid md:grid-cols-2 grid-cols-1 md:h-[70vh] h-full" id="Events">
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 5 }}
+        className="grid md:grid-cols-2 grid-cols-1 md:h-[70vh] h-full"
+        id="Events"
+      >
         <div className="flex md:space-x-8 md:mx-20 space-x-5 items-center">
           <Image
             src="/calendar.svg"
@@ -23,14 +30,14 @@ function UpcomingEve() {
           />
         </div>
         <div className="h-full space-y-8 flex flex-col items-center justify-center">
-          <div className="md:h-[80%] h-full w-full overflow-y-scroll">
+          <div className="md:h-[80%] h-full w-full overflow-x-hidden overflow-y-scroll">
             <Lists />
             <Lists />
             <Lists />
             <Lists />
           </div>
         </div>
-      </div>
+      </motion.div>
     </>
   );
 }

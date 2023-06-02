@@ -5,9 +5,9 @@ import { motion } from "framer-motion";
 const Landing = () => {
   return (
     <motion.div
-      initial={{ x: -1000 }}
-      animate={{ x: 0 }}
-      transition={{ delay: 1.5, duration: 2, type: "spring", stiffness: 100 }}
+      initial={{ y: -1000 }}
+      animate={{ y: 0 }}
+      transition={{ delay: 1, duration: 1 }}
       id="Landing"
       className="landing overflow-x-hidden"
     >
