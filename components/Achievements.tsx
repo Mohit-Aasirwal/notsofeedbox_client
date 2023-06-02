@@ -9,7 +9,7 @@ const Achievements = () => {
     <motion.div
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
-      transition={{ delay: 0.5, duration: 2 }}
+      transition={{ delay: 0.5, duration: 1 }}
       className="flex flex-col my-10"
       id="Achievements"
     >

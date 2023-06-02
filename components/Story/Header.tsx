@@ -25,7 +25,7 @@ function Header() {
         initial="hidden"
         animate="visible"
         whileInView={{ opacity: 1 }}
-        transition={{ delay: 0.2, duration: 2 }}
+        transition={{ delay: 0.2, duration: 1 }}
         className="img_bg gradient md:w-1/2 md:h-[90vh] h-[50vh] font-sans"
       >
         <motion.h1

@@ -33,7 +33,7 @@ const People = () => {
       initial={{ opacity: 0, scale: 0.5 }}
       animate={{ opacity: 1, scale: 1 }}
       transition={{
-        duration: 4,
+        duration: 1,
         delay: 0.5,
       }}
       className="bg-[#00C2FF] mx-10 rounded-3xl"
@@ -49,7 +49,7 @@ const People = () => {
           initial={{ opacity: 0.4, scale: 0.6 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{
-            duration: 5,
+            duration: 1,
             delay: 0.5,
           }}
           className="rounded-full ml-20 w-40 h-40 bg-white"
@@ -58,7 +58,7 @@ const People = () => {
           initial={{ opacity: 0.4, scale: 0.6 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{
-            duration: 5,
+            duration: 1,
             delay: 0.5,
           }}
           className="rounded-full w-40 h-40 bg-white"
@@ -67,7 +67,7 @@ const People = () => {
           initial={{ opacity: 0.4, scale: 0.6 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{
-            duration: 5,
+            duration: 1,
             delay: 0.5,
           }}
           className="rounded-full w-40 h-40 bg-white"
@@ -76,7 +76,7 @@ const People = () => {
           initial={{ opacity: 0.4, scale: 0.6 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{
-            duration: 5,
+            duration: 1,
             delay: 0.5,
           }}
           className="rounded-full w-40 h-40 bg-white"
@@ -85,7 +85,7 @@ const People = () => {
           initial={{ opacity: 0.4, scale: 0.6 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{
-            duration: 5,
+            duration: 1,
             delay: 0.5,
           }}
           className="rounded-full w-40 h-40 bg-white"
@@ -94,7 +94,7 @@ const People = () => {
           initial={{ opacity: 0.4, scale: 0.6 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{
-            duration: 5,
+            duration: 1,
             delay: 0.5,
           }}
           className="rounded-full w-40 h-40 bg-white"
@@ -103,7 +103,7 @@ const People = () => {
           initial={{ opacity: 0.4, scale: 0.6 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{
-            duration: 5,
+            duration: 1,
             delay: 0.5,
           }}
           className="rounded-full w-40 h-40 bg-white"
@@ -112,7 +112,7 @@ const People = () => {
           initial={{ opacity: 0.4, scale: 0.6 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{
-            duration: 5,
+            duration: 1,
             delay: 0.5,
           }}
           className="rounded-full w-40 h-40 bg-white"
@@ -121,7 +121,7 @@ const People = () => {
           initial={{ opacity: 0.4, scale: 0.6 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{
-            duration: 5,
+            duration: 1,
             delay: 0.5,
           }}
           className="rounded-full w-40 h-40 bg-white"
@@ -130,7 +130,7 @@ const People = () => {
           initial={{ opacity: 0.4, scale: 0.6 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{
-            duration: 5,
+            duration: 1,
             delay: 0.5,
           }}
           className="rounded-full w-40 h-40 bg-white"
@@ -139,7 +139,7 @@ const People = () => {
           initial={{ opacity: 0.4, scale: 0.6 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{
-            duration: 5,
+            duration: 1,
             delay: 0.5,
           }}
           className="rounded-full w-40 h-40 bg-white"
