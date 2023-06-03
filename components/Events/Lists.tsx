@@ -1,0 +1,50 @@
+import React from "react";
+import { motion } from "framer-motion";
+
+const divVariants = {
+  hidden: {
+    opacity: 0,
+    x: "-100vw",
+  },
+  visible: {
+    opacity: 1,
+    x: 0,
+    transition: {
+      type: "spring",
+      delay: 0.5,
+    },
+  },
+};
+
+function Lists() {
+  return (
+    <>
+      <motion.div
+        variants={divVariants}
+        initial="hidden"
+        animate="visible"
+        whileHover={{ scale: 1.09 }}
+        className="flex w-[100vw] md:w-full space-x-6 items-center justify-center border-b-dashed border-b pb-3 border-b-neutral/50"
+      >
+        <div className="flex flex-col items-center justify-center text-primary">
+          <h3 className="font-medium font-inter capitalize md:text-lg flex items-center justify-center text-center tracking-widest">
+            May
+          </h3>
+          <h2 className="font-black text-4xl md:text-5xl font-seriff flex items-center justify-center text-center">
+            14
+          </h2>
+        </div>
+        <div className=" max-w-sm pt-3 space-y-1">
+          <h1 className="font-black font-inter text-xl md:text-2xl text-secondary">
+            The University’s 173rd Commencement
+          </h1>
+          <h3 className="font-medium font-inter">
+            Outdoor Spaces, 600 - Malesardi Quadrangle
+          </h3>
+        </div>
+      </motion.div>
+    </>
+  );
+}
+
+export default Lists;
