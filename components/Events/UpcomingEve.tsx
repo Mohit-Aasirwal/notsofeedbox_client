@@ -1,8 +1,22 @@
 import Image from "next/image";
 import React from "react";
 import Lists from "./Lists";
+import { EventSec } from "@/types";
 
-function UpcomingEve() {
+interface eve {
+	events: EventSec[];
+}
+
+interface item {
+	attributes: {
+		title_event: string;
+		location: string;
+		date: string;
+		month: string;
+	};
+}
+
+function UpcomingEve({ events }: eve) {
 	return (
 		<>
 			<div className="grid md:grid-cols-2 grid-cols-1 md:h-[70vh] h-full">
@@ -24,10 +38,17 @@ function UpcomingEve() {
 				</div>
 				<div className="h-full  space-y-8 flex flex-col items-center justify-center">
 					<div className="md:h-[60%] h-full overflow-y-scroll">
-						<Lists />
-						<Lists />
-						<Lists />
-						<Lists />
+						{events.map((item: item, i: number) => {
+							return (
+								<Lists
+									key={i}
+									title={item.attributes.title_event}
+									location={item.attributes.location}
+									date={item.attributes.date}
+									month={item.attributes.month}
+								/>
+							);
+						})}
 					</div>
 				</div>
 			</div>
