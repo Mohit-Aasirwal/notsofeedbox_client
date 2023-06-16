@@ -1,10 +1,9 @@
-import { Api_Url, Strapi_Api_Token } from "@/utils/urls";
 import axios from "axios";
 
 const api = axios.create({
-	baseURL: Api_Url,
+	baseURL: process.env.API_BASE_URL,
 	headers: {
-		Authorization: `Bearer ${Strapi_Api_Token}`,
+		Authorization: `Bearer ${process.env.BACKEND_API_KEY}`,
 	},
 });
 
