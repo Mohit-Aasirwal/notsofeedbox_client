@@ -18,7 +18,8 @@ interface stats {
 	stat: StatSec[];
 }
 
-const Stats = ({ stat }: stats) => {
+const Stats = () => {
+	//   console.log(stat);
 	return (
 		<motion.div
 			variants={animation}
@@ -38,9 +39,10 @@ const Stats = ({ stat }: stats) => {
 				}}
 				className="font-poppins md:text-5xl text-3xl text-center text-[#00C2FF]"
 			>
-				5+ <br />{" "}
+				{/* {stat[0].attributes.figure}  */}5+
+				<br />
 				<p className="font-poppins text-[#003865] text-lg font-extralight">
-					Branches
+					{/* {stat[0].attributes.type} */} Student Campuses
 				</p>
 			</motion.h1>
 			<motion.h1
@@ -54,10 +56,10 @@ const Stats = ({ stat }: stats) => {
 					stiffness: 1000,
 				}}
 			>
-				200+
+				{/* {stat[1].attributes.figure} */}200+
 				<br />{" "}
 				<p className="font-poppins text-[#003865] text-lg font-extralight">
-					Branches
+					{/* {stat[1].attributes.type} */}Currently Enrolled Students
 				</p>
 			</motion.h1>
 			<motion.h1
@@ -71,10 +73,10 @@ const Stats = ({ stat }: stats) => {
 				}}
 				className="font-poppins md:text-5xl text-3xl text-center text-[#00C2FF]"
 			>
-				45+
+				{/* {stat[2].attributes.figure} */}50+
 				<br />{" "}
 				<p className="font-poppins text-[#003865] text-lg font-extralight">
-					Branches
+					{/* {stat[2].attributes.type} */} Informative Sessions
 				</p>
 			</motion.h1>
 			<motion.h1
@@ -84,10 +86,10 @@ const Stats = ({ stat }: stats) => {
 				transition={{ duration: 0.1, type: "spring", stiffness: 1000 }}
 				className="font-poppins md:text-5xl text-3xl text-center text-[#00C2FF]"
 			>
-				50+
+				{/* {stat[3].attributes.figure} */}100+
 				<br />{" "}
 				<p className="font-poppins text-[#003865] text-lg font-extralight">
-					Branches
+					{/* {stat[3].attributes.type} */}Alumni Network
 				</p>{" "}
 			</motion.h1>
 		</motion.div>

@@ -12,26 +12,26 @@ import Stats from "@/components/Stats";
 import People from "@/components/People";
 import { layout } from "@/types";
 const Computer = ({
-	hero,
-	stat,
-	timeline,
-	event,
-	achievement,
-	team,
+  hero,
+  stat,
+  timeline,
+  event,
+  achievement,
+  team,
 }: layout) => {
-	return (
-		<div>
-			<Navbar />
-			<Landing />
-			<Stats stat={stat} />
-			<About timeline={timeline} />
-			<Achievement achievement={achievement} />
-			<UpcomingEve events={event} />
-			<People />
-			<Contact />
-			<Footer />
-		</div>
-	);
+  return (
+    <div>
+      <Navbar />
+      <Landing hero={hero} />
+      <Stats stat={stat} />
+      <About timeline={timeline} />
+      <Achievement achievement={achievement} />
+      <UpcomingEve events={event} />
+      <People team={team} />
+      <Contact />
+      <Footer />
+    </div>
+  );
 };
 
 export default Computer;

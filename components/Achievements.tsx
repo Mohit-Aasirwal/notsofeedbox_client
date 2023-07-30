@@ -9,7 +9,8 @@ interface achieve {
 	achievement: AchieveSec[];
 }
 
-const Achievements = ({ achievement }: achieve) => {
+const Achievements = () => {
+	//   console.log(achievement);
 	return (
 		<motion.div
 			initial={{ opacity: 0 }}
@@ -29,47 +30,61 @@ const Achievements = ({ achievement }: achieve) => {
 				&quot;Unlocking Milestones, Embracing Success&quot;
 			</p>
 			<div className="flex flex-col md:my-6">
-				{/* <Image
-          src={"/line.svg"}
-          alt="line"
-          height={10}
-          width={100}
-          className="w-3/4 mx-auto rounded-full -my-2 xl:-my-3"
-        /> */}
 				<div className="lg:w-3/4 mx-auto rounded-xl lg:-my-2 xl:-my-3">
 					<Line />
 				</div>
 				<div className="flex flex-row justify-end md:mx-11 xl:mx-24">
 					<div className="my-10">
-						<h1 className="text-[#003865] text-3xl font-bold">Achievement</h1>
-						<p>Lorem ipsum dolor sit amet.</p>
+						<h1 className="text-[#003865] text-3xl font-bold">
+							{/* {achievement.title} */} Lorem ipsum dolor sit amet.
+						</h1>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo,
+							magnam.
+							{/* {achievement.description} */}
+						</p>
 					</div>
-					<div className="bg-black xl:mx-20 rounded-full w-48 h-48"></div>
+					<div className="bg-black xl:mx-20 rounded-full w-48 h-48 z-50">
+						<Image
+							src={
+								"/yashsir.jpg"
+								// process.env.NEXT_PUBLIC_API_BASE_URL +
+								// achievement[0].attributes.img.data.attributes.url
+							}
+							alt="logo"
+							width={500}
+							height={500}
+							className="object-cover w-full h-full rounded-full"
+						/>
+					</div>
 				</div>
-				{/* <Image
-          src={"/line.svg"}
-          alt="line"
-          height={10}
-          width={100}
-          className="w-3/4 mx-auto rounded-xl -my-2 xl:-my-3"
-        /> */}
-				<div className="w-3/4 mx-auto rounded-xl -my-2 xl:-my-3">
+				<div className="w-3/4 mx-auto rounded-xl -my-2 xl:-my-3 z-0">
 					<Line />
 				</div>
 				<div className="flex flex-row justify-start">
-					<div className="bg-black rounded-full w-48 h-48 md:mx-11 xl:mx-24"></div>
+					<div className="bg-black rounded-full w-48 h-48 md:mx-11 xl:mx-24 z-50">
+						<Image
+							src={
+								"/ted.jpg"
+								// process.env.NEXT_PUBLIC_API_BASE_URL +
+								// achievement[1].attributes.img.data.attributes.url
+							}
+							alt="logo"
+							width={500}
+							height={500}
+							className="object-cover w-full h-full rounded-full z-50"
+						/>
+					</div>
 					<div className="my-10">
-						<h1 className="text-[#003865] text-3xl font-bold">Achievement</h1>
-						<p>Lorem ipsum dolor sit amet.</p>
+						<h1 className="text-[#003865] text-3xl font-bold">
+							{/* {achievement.title} */} Lorem ipsum dolor sit amet.
+						</h1>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero,
+							cum. {/* {achievement.description} */}
+						</p>
 					</div>
 				</div>
-				{/* <Image
-          src={"/line.svg"}
-          alt="line"
-          height={10}
-          width={100}
-          className="w-3/4 mx-auto rounded-xl -my-2 xl:-my-3"
-        /> */}
 				<div className="w-3/4 mx-auto rounded-xl -my-2 xl:-my-3">
 					<Line />
 				</div>

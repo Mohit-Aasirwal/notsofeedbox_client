@@ -1,67 +1,74 @@
-import { AxiosResponse } from "axios";
-import { GetServerSideProps } from "next";
-import {
-	getAchievements,
-	getEvents,
-	getHero,
-	getStats,
-	getTeam,
-	getTimeline,
-} from "@/api";
-import {
-	AchieveSec,
-	CollectionResponse,
-	EventSec,
-	HeroSec,
-	StatSec,
-	TeamSec,
-	TimelineSec,
-	layout,
-} from "@/types";
-import ConditionalRender from "@/layouts/ConditionalRender";
-import Window from "@/layouts/Window";
-import { useState, useEffect } from "react";
+// import { AxiosResponse } from "axios";
+// import { GetServerSideProps } from "next";
+// import {
+//   getAchievements,
+//   getEvents,
+//   getHero,
+//   getStats,
+//   getTeam,
+//   getTimeline,
+// } from "@/api";
+// import {
+//   AchieveSec,
+//   CollectionResponse,
+//   EventSec,
+//   HeroSec,
+//   StatSec,
+//   TeamSec,
+//   TimelineSec,
+//   layout,
+// } from "@/types";
+// import ConditionalRender from "@/layouts/ConditionalRender";
+// import Window from "@/layouts/Window";
+// import { useState, useEffect } from "react";
 import Head from "next/head";
-export default function Home({
-	hero,
-	stat,
-	timeline,
-	event,
-	achievement,
-	team,
-}: layout) {
-	return (
-		<>
-			<Head>
-				<title>Club FeedBox</title>
-				<meta name="viewport" content="initial-scale=1.0, width=device-width" />
-			</Head>
+import Navbar from "@/components/Navbar";
+import Stats from "@/components/Stats";
+import About from "@/components/About";
+import Achievement from "@/components/Achievements";
+import Landing from "@/components/Landing";
+import Event from "@/components/Events/UpcomingEve";
+import Team from "@/components/People";
+import Contact from "@/components/Contact";
+import Footer from "@/components/Footer";
+export default function Home() {
+  return (
+    <>
+      <Head>
+        <title>Club FeedBox</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
 
-			<div
-			// className={"custom-cursor"}
-			>
-				{/* <Window/> */}
-				{/* <Navbar />
-	  <Drawer/>
-      <Landing />
-      <About />
-      <Achievement /> */}
-				<ConditionalRender
-					hero={hero}
-					stat={stat}
-					achievement={achievement}
-					event={event}
-					team={team}
-					timeline={timeline}
-				/>
-				{/* Story Section */}
-				{/* <div className="w-full border border-black">
+      <div
+      // className={"custom-cursor"}
+      >
+        {/* <Window/> */}
+        <Navbar />
+
+        <Landing />
+        <Stats />
+        <About />
+        <Achievement />
+        <Event />
+        <Team />
+        <Contact />
+        <Footer />
+        {/* <ConditionalRender
+          hero={hero}
+          stat={stat}
+          achievement={achievement}
+          event={event}
+          team={team}
+          timeline={timeline}
+        /> */}
+        {/* Story Section */}
+        {/* <div className="w-full border border-black">
         <div className="grid md:grid-cols-2 grid-cols-1 overflow-hidden lg:h-[90vh] h-auto"> */}
-				{/* Story Header */}
-				{/* <Header /> */}
-				{/* Story Time
+        {/* Story Header */}
+        {/* <Header /> */}
+        {/* Story Time
           line */}
-				{/* <Timeline />
+        {/* <Timeline />
         </div>
       </div>
       <div className="">
@@ -69,37 +76,37 @@ export default function Home({
       </div>
       <Contact />
       <Footer /> */}
-			</div>
-		</>
-	);
+      </div>
+    </>
+  );
 }
 
-export const getServerSideProps: GetServerSideProps = async ({ req }) => {
-	const { data: hero }: AxiosResponse<CollectionResponse<HeroSec[]>> =
-		await getHero();
+// export const getServerSideProps: GetServerSideProps = async ({ req }) => {
+//   const { data: hero }: AxiosResponse<CollectionResponse<HeroSec[]>> =
+//     await getHero();
 
-	const { data: stat }: AxiosResponse<CollectionResponse<StatSec[]>> =
-		await getStats();
+//   const { data: stat }: AxiosResponse<CollectionResponse<StatSec[]>> =
+//     await getStats();
 
-	const { data: timeline }: AxiosResponse<CollectionResponse<TimelineSec[]>> =
-		await getTimeline();
+//   const { data: timeline }: AxiosResponse<CollectionResponse<TimelineSec[]>> =
+//     await getTimeline();
 
-	const { data: event }: AxiosResponse<CollectionResponse<EventSec[]>> =
-		await getEvents();
+//   const { data: event }: AxiosResponse<CollectionResponse<EventSec[]>> =
+//     await getEvents();
 
-	const { data: achievement }: AxiosResponse<CollectionResponse<AchieveSec[]>> =
-		await getAchievements();
+//   const { data: achievement }: AxiosResponse<CollectionResponse<AchieveSec[]>> =
+//     await getAchievements();
 
-	const { data: team }: AxiosResponse<CollectionResponse<TeamSec[]>> =
-		await getTeam();
-	return {
-		props: {
-			hero,
-			stat,
-			timeline,
-			event,
-			achievement,
-			team,
-		},
-	};
-};
+//   const { data: team }: AxiosResponse<CollectionResponse<TeamSec[]>> =
+//     await getTeam();
+//   return {
+//     props: {
+//       hero,
+//       stat,
+//       timeline,
+//       event,
+//       achievement,
+//       team,
+//     },
+//   };
+// };
