@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import React from "react";
 import { motion } from "framer-motion";
 import { TeamSec } from "@/types";
@@ -11,6 +11,42 @@ interface Props {
 const team = [{}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}];
 
 const People = () => {
+	const containerRef: any = useRef(null);
+	const [isDragging, setIsDragging] = useState(false);
+	const [startX, setStartX] = useState(0);
+	const [scrollLeft, setScrollLeft] = useState(0);
+
+	useEffect(() => {
+		const container = containerRef.current;
+
+		const handleMouseDown = (event: any) => {
+			setIsDragging(true);
+			setStartX(event.clientX - container.offsetLeft);
+			setScrollLeft(container.scrollLeft);
+		};
+
+		const handleMouseUp = () => {
+			setIsDragging(false);
+		};
+
+		const handleMouseMove = (event: any) => {
+			if (!isDragging) return;
+			event.preventDefault();
+			const x = event.clientX - container.offsetLeft;
+			const walk = (x - startX) * 2; // Adjust the scrolling speed here
+			container.scrollLeft = scrollLeft - walk;
+		};
+
+		container.addEventListener("mousedown", handleMouseDown);
+		container.addEventListener("mouseup", handleMouseUp);
+		container.addEventListener("mousemove", handleMouseMove);
+
+		return () => {
+			container.removeEventListener("mousedown", handleMouseDown);
+			container.removeEventListener("mouseup", handleMouseUp);
+			container.removeEventListener("mousemove", handleMouseMove);
+		};
+	}, [isDragging, scrollLeft, startX]);
 	// console.log(team);
 	return (
 		<motion.div
@@ -28,7 +64,10 @@ const People = () => {
 				Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum,
 				minus!
 			</p>
-			<div className="grid grid-flow-col overflow-x-scroll scrollbar-hide my-10">
+			<div
+				ref={containerRef}
+				className="grid grid-flow-col overflow-x-scroll scrollbar-hide my-10"
+			>
 				{team &&
 					team.map((value: any, id: number) => {
 						return (
