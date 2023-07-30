@@ -1,4 +1,3 @@
-import { Api_Url, Strapi_Api_Token } from "@/utils/urls";
 import axios from "axios";
 
 const api = axios.create({
