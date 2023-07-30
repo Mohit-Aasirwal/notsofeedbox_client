@@ -1,33 +1,17 @@
-// import { gsap } from "gsap";
-// import Carousel from "@/utils/carousel";
 import Image from "next/image";
 import { useState, useEffect } from "react";
 import React from "react";
 import { motion } from "framer-motion";
+import { TeamSec } from "@/types";
+
+interface Props {
+  team: TeamSec[];
+}
+
+const team = [{}, {}, {}, {}];
 
 const People = () => {
-  // const [currentIndex, setCurrentIndex] = useState(0);
-  // const carouselItems = [
-  //   "/group.png",
-  //   "/group.png",
-  //   "/group.png",
-  //   "/group.png",
-  //   "/group.png",
-  //   "/group.png",
-  //   "/group.png",
-  //   "/group.png",
-  //   "/logo.png",
-  // ]; // Array of carousel items (replace with your own data)
-  // const carouselItemWidth = 50; // Width of carousel item (replace with your own value)
-  // useEffect(() => {
-  //   const interval = setInterval(() => {
-  //     setCurrentIndex((prevIndex) =>
-  //       prevIndex === carouselItems.length - 1 ? 0 : prevIndex + 1
-  //     );
-  //   }, 1000); // Adjust the interval as desired (3000 milliseconds = 3 seconds)
-
-  //   return () => clearInterval(interval);
-  // });
+  // console.log(team);
   return (
     <motion.div
       initial={{ opacity: 0, scale: 0.5 }}
@@ -45,135 +29,34 @@ const People = () => {
         minus!
       </p>
       <div className="grid grid-flow-col overflow-x-scroll space-x-10 my-10">
-        <motion.div
-          initial={{ opacity: 0.4, scale: 0.6 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{
-            duration: 1,
-            delay: 0.5,
-          }}
-          className="rounded-full ml-20 w-40 h-40 bg-white"
-        ></motion.div>
-        <motion.div
-          initial={{ opacity: 0.4, scale: 0.6 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{
-            duration: 1,
-            delay: 0.5,
-          }}
-          className="rounded-full w-40 h-40 bg-white"
-        ></motion.div>
-        <motion.div
-          initial={{ opacity: 0.4, scale: 0.6 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{
-            duration: 1,
-            delay: 0.5,
-          }}
-          className="rounded-full w-40 h-40 bg-white"
-        ></motion.div>
-        <motion.div
-          initial={{ opacity: 0.4, scale: 0.6 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{
-            duration: 1,
-            delay: 0.5,
-          }}
-          className="rounded-full w-40 h-40 bg-white"
-        ></motion.div>
-        <motion.div
-          initial={{ opacity: 0.4, scale: 0.6 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{
-            duration: 1,
-            delay: 0.5,
-          }}
-          className="rounded-full w-40 h-40 bg-white"
-        ></motion.div>
-        <motion.div
-          initial={{ opacity: 0.4, scale: 0.6 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{
-            duration: 1,
-            delay: 0.5,
-          }}
-          className="rounded-full w-40 h-40 bg-white"
-        ></motion.div>
-        <motion.div
-          initial={{ opacity: 0.4, scale: 0.6 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{
-            duration: 1,
-            delay: 0.5,
-          }}
-          className="rounded-full w-40 h-40 bg-white"
-        ></motion.div>
-        <motion.div
-          initial={{ opacity: 0.4, scale: 0.6 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{
-            duration: 1,
-            delay: 0.5,
-          }}
-          className="rounded-full w-40 h-40 bg-white"
-        ></motion.div>
-        <motion.div
-          initial={{ opacity: 0.4, scale: 0.6 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{
-            duration: 1,
-            delay: 0.5,
-          }}
-          className="rounded-full w-40 h-40 bg-white"
-        ></motion.div>
-        <motion.div
-          initial={{ opacity: 0.4, scale: 0.6 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{
-            duration: 1,
-            delay: 0.5,
-          }}
-          className="rounded-full w-40 h-40 bg-white"
-        ></motion.div>
-        <motion.div
-          initial={{ opacity: 0.4, scale: 0.6 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{
-            duration: 1,
-            delay: 0.5,
-          }}
-          className="rounded-full w-40 h-40 bg-white"
-        ></motion.div>
+        {team &&
+          team.map((value: any, id: number) => {
+            return (
+              <motion.div
+                initial={{ opacity: 0.4, scale: 0.6 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{
+                  duration: 1,
+                  delay: 0.5,
+                }}
+                key={id}
+                className="rounded-full ml-20 w-40 h-40 bg-white"
+              >
+                <Image
+                  src={
+                    "/group.png"
+                    // process.env.NEXT_PUBLIC_API_BASE_URL +
+                    // team[0].attributes.img.data.attributes.url
+                  }
+                  alt="images"
+                  width={100}
+                  height={100}
+                  className="rounded-full object-contain"
+                />
+              </motion.div>
+            );
+          })}
       </div>
-      {/* <div className="carousel">
-        <div
-          className="carousel-inner grid grid-flow-col overflow-x-hidden"
-          style={{ marginLeft: -currentIndex * carouselItemWidth }}
-        > */}
-      {/* Render carousel items */}
-      {/* {carouselItems.map((item, index) => (
-            <div className="overflow-x-hidden" key={index}>
-              <Image src={item} alt="images" width={300} height={300} className="rounded-full" />
-            </div>
-          ))}
-        </div>
-      </div> */}
-      {/* <div className="stage">
-        <div className="container">
-          <div className="ring">
-            <div className="img"></div>
-            <div className="img"></div>
-            <div className="img"></div>
-            <div className="img"></div>
-            <div className="img"></div>
-            <div className="img"></div>
-            <div className="img"></div>
-            <div className="img"></div>
-            <div className="img"></div>
-            <div className="img"></div>
-          </div>
-        </div>
-      </div> */}
     </motion.div>
   );
 };

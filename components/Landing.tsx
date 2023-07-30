@@ -3,6 +3,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 
 const Landing = () => {
+  // console.log(hero[0].attributes.Hero_Img.data.attributes.url);
   return (
     <motion.div
       initial={{ y: -1000 }}
@@ -17,7 +18,11 @@ const Landing = () => {
          */}
         <Image
           priority
-          src="/group.png"
+          src={
+            "/group.png"
+            // process.env.NEXT_PUBLIC_API_BASE_URL +
+            // hero[0].attributes.Hero_Img.data.attributes.url
+          }
           alt="group"
           className="w-full h-max md:h-screen"
           width={1200}
@@ -49,8 +54,8 @@ const Landing = () => {
               animate={{ x: [-1000, 0] }}
               className="text-xs md:text-base text-white"
             >
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis,
-              maxime.
+              {/* {hero[0].attributes.Description} */} Lorem ipsum dolor sit
+              amet.
             </motion.p>
             <motion.button
               whileHover={{
