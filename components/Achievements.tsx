@@ -44,7 +44,7 @@ const Achievements = () => {
 							{/* {achievement.description} */}
 						</p>
 					</div>
-					<div className="bg-black xl:mx-20 rounded-full w-48 h-48 z-50">
+					<div className="bg-black xl:mx-20 rounded-full w-48 h-48 z-30">
 						<Image
 							src={
 								"/yashsir.jpg"
@@ -62,7 +62,7 @@ const Achievements = () => {
 					<Line />
 				</div>
 				<div className="flex flex-row justify-start">
-					<div className="bg-black rounded-full w-48 h-48 md:mx-11 xl:mx-24 z-50">
+					<div className="bg-black rounded-full w-48 h-48 md:mx-11 xl:mx-24 z-30">
 						<Image
 							src={
 								"/ted.jpg"

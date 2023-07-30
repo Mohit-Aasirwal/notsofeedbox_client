@@ -8,7 +8,41 @@ interface Props {
 	team: TeamSec[];
 }
 
-const team = [{}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}];
+interface teams {
+	imageurl: string;
+	name: string;
+}
+
+const team = [
+	{
+		imageurl: "/ishitamam.jpg",
+		name: "Ishita Agrawal",
+	},
+	{
+		imageurl: "/prashanshamam.jpg",
+		name: "Prashansha Bharti",
+	},
+	{
+		imageurl: "/palak.jpg",
+		name: "Palak Bijole",
+	},
+	{
+		imageurl: "/nikhilsir.jpg",
+		name: "Nikhil Arya",
+	},
+	{
+		imageurl: "/souravsir.jpg",
+		name: "Sourav Singh",
+	},
+	{
+		imageurl: "/swayamsir.jpg",
+		name: "Swayam Sanghvi",
+	},
+	{
+		imageurl: "/uditsir.jpg",
+		name: "Udit Badjatya",
+	},
+];
 
 const People = () => {
 	const containerRef: any = useRef(null);
@@ -69,7 +103,7 @@ const People = () => {
 				className="grid grid-flow-col overflow-x-scroll scrollbar-hide my-10"
 			>
 				{team &&
-					team.map((value: any, id: number) => {
+					team.map((value: teams, id: number) => {
 						return (
 							<motion.div
 								initial={{ opacity: 0.4, scale: 0.6 }}
@@ -79,19 +113,24 @@ const People = () => {
 									delay: 0.5,
 								}}
 								key={id}
-								className="rounded-full ml-20 w-40 h-40 bg-white"
+								className="space-y-3 ml-20 w-52 h-52 flex flex-col items-center justify-center"
 							>
-								<Image
-									src={
-										"/group.png"
-										// process.env.NEXT_PUBLIC_API_BASE_URL +
-										// team[0].attributes.img.data.attributes.url
-									}
-									alt="images"
-									width={800}
-									height={800}
-									className="rounded-full object-cover w-full h-full"
-								/>
+								<div className="w-40 h-40 rounded-full">
+									<Image
+										src={
+											value.imageurl
+											// process.env.NEXT_PUBLIC_API_BASE_URL +
+											// team[0].attributes.img.data.attributes.url
+										}
+										alt="images"
+										width={800}
+										height={800}
+										className="rounded-full object-cover w-full h-full"
+									/>
+								</div>
+								<h4 className="text-white text-center font-bold">
+									{value.name}
+								</h4>
 							</motion.div>
 						);
 					})}
