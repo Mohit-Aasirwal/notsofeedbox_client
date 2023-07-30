@@ -75,11 +75,11 @@ const Alumni = () => {
     },
   ];
   return (
-    <div id="Alumni">
+    <div id="Alumni" className="md:my-20 my-20">
       <h2 className="text-6xl text-primary font-extrabold w-[90%] mx-auto">
         Our Alumni
       </h2>
-      <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 w-[90%] mx-auto gap-6 my-6">
+      <div className="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 w-[90%] mx-auto gap-6 my-6">
         {alumni.map((alum, id) => (
           <div
             key={id}

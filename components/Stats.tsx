@@ -25,7 +25,7 @@ const Stats = () => {
 			variants={animation}
 			initial="initial"
 			animate="animate"
-			className="grid md:grid-cols-4 grid-cols-2 my-10 p-10 overflow-hidden"
+			className="grid md:grid-cols-4 grid-cols-2 md:my-10 md:p-10 py-20 gap-10 overflow-hidden"
 		>
 			<motion.h1
 				initial={{ opacity: 0 }}

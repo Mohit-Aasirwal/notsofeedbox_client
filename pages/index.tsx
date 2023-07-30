@@ -32,30 +32,32 @@ import Team from "@/components/People";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import Alumni from "@/components/Alumni";
+import Drawer from "@/components/Drawer";
 export default function Home() {
-	return (
-		<>
-			<Head>
-				<title>Club FeedBox</title>
-				<meta name="viewport" content="initial-scale=1.0, width=device-width" />
-			</Head>
+  return (
+    <>
+      <Head>
+        <title>Club FeedBox</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
 
-			<div
-			// className={"custom-cursor"}
-			>
-				{/* <Window/> */}
-				<Navbar />
+      <div
+      // className={"custom-cursor"}
+      >
+        {/* <Window/> */}
+        <Navbar />
+        <Drawer />
 
-				<Landing />
-				<Stats />
-				<About />
-				<Achievement />
-				<Alumni />
-				{/* <Event /> */}
-				<Team />
-				<Contact />
-				<Footer />
-				{/* <ConditionalRender
+        <Landing />
+        <Stats />
+        <About />
+        <Achievement />
+        <Alumni />
+        {/* <Event /> */}
+        <Team />
+        <Contact />
+        <Footer />
+        {/* <ConditionalRender
           hero={hero}
           stat={stat}
           achievement={achievement}
@@ -63,14 +65,14 @@ export default function Home() {
           team={team}
           timeline={timeline}
         /> */}
-				{/* Story Section */}
-				{/* <div className="w-full border border-black">
+        {/* Story Section */}
+        {/* <div className="w-full border border-black">
         <div className="grid md:grid-cols-2 grid-cols-1 overflow-hidden lg:h-[90vh] h-auto"> */}
-				{/* Story Header */}
-				{/* <Header /> */}
-				{/* Story Time
+        {/* Story Header */}
+        {/* <Header /> */}
+        {/* Story Time
           line */}
-				{/* <Timeline />
+        {/* <Timeline />
         </div>
       </div>
       <div className="">
@@ -78,9 +80,9 @@ export default function Home() {
       </div>
       <Contact />
       <Footer /> */}
-			</div>
-		</>
-	);
+      </div>
+    </>
+  );
 }
 
 // export const getServerSideProps: GetServerSideProps = async ({ req }) => {

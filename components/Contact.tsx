@@ -62,18 +62,10 @@ const Contact = () => {
           alt="contact"
           width={50}
           height={50}
-          className="w-full h-screen "
+          className="w-full h-screen hidden md:flex"
         />
-        <div className="absolute md:top-1/3 md:left-1/3 xl:w-96 w-80 ">
-          {/* <Image
-            priority
-            src={"/connecttext.svg"}
-            alt="connecttext"
-            width={200}
-            height={200}
-            className="absolute md:top-1/3 md:left-1/3 xl:w-96 w-80 "
-          /> */}
-          <ConnectText/>
+        <div className="md:absolute md:top-1/3 md:left-1/3 mx-20 md:mx-0 xl:w-96 w-80 ">
+          <ConnectText />
         </div>
       </div>
 
@@ -85,7 +77,7 @@ const Contact = () => {
           height={100}
           className="mx-auto"
         />
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit} action="" method="POST">
           <div className="mx-10">
             <label htmlFor="email"></label>
             <input

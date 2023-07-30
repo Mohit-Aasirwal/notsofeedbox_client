@@ -90,16 +90,16 @@ const People = () => {
         duration: 1,
         delay: 0.5,
       }}
-      className="bg-[#00C2FF] mx-10 pb-10 mb-8 rounded-3xl"
+      className="bg-[#00C2FF] md:mx-10 pb-10 mb-8 rounded-3xl"
       id="People"
     >
-      <h1 className="text-4xl text-white font-bold px-16 pt-10">
+      <h1 className="md:text-4xl text-lg text-white font-bold md:px-16 px-24 pt-10">
         Leaders of FeedBox
       </h1>
 
       <div
         ref={containerRef}
-        className="grid grid-flow-col overflow-x-scroll scrollbar-hide my-10"
+        className="grid md:grid-flow-col grid-flow-row px-auto overflow-x-scroll scrollbar-hide my-10"
       >
         {team &&
           team.map((value: teams, id: number) => {

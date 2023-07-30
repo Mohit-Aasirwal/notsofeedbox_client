@@ -16,7 +16,7 @@ const Achievements = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ delay: 0.5, duration: 1 }}
-      className="flex flex-col my-10"
+      className=" flex-col my-10 md:flex hidden"
       id="Achievements"
     >
       <Image
@@ -36,11 +36,11 @@ const Achievements = () => {
         <div className="flex flex-row justify-end md:mx-11 xl:mx-24">
           <div className="my-10">
             <h1 className="text-[#003865] text-3xl font-bold">
-              {/* {achievement.title} */}Recognized as MP&quot;s Young Achievers
+              {/* {achievement.title} */}Recognized as MP&apos;s Young Achievers
             </h1>
             <p>
               {/* {achievement.description} */}
-              By the Honourable Chief Minister of MP Mr. Shivaraj Singh Chouhan
+              By the Honourable Chief Minister of MP Mr. Shivraj Singh Chouhan
               in the startup MSME category.
             </p>
           </div>
