@@ -46,7 +46,7 @@ const events = [
 function UpcomingEve() {
   // console.log(events);
   return (
-    <>
+    <div id="Events">
       <div className="grid md:grid-cols-2 grid-cols-1 md:h-[70vh] h-full">
         <div className="flex lg:space-x-8 space-x-5 justify-center items-center">
           <Image
@@ -80,7 +80,7 @@ function UpcomingEve() {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

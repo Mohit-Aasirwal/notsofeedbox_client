@@ -6,7 +6,7 @@ const animation = {
 	initial: {
 		opacity: 0,
 	},
-	whileInView: {
+	animate: {
 		opacity: 1,
 		transition: {
 			duration: 1,
@@ -24,14 +24,14 @@ const Stats = () => {
 		<motion.div
 			variants={animation}
 			initial="initial"
-			whileInView="whileInView"
+			animate="animate"
 			className="grid md:grid-cols-4 grid-cols-2 my-10 p-10 overflow-hidden"
 		>
 			<motion.h1
 				initial={{ opacity: 0 }}
 				animate={{ opacity: 1, scale: 1 }}
 				whileHover={{ scale: 1.2 }}
-				// whileInView={{ opacity: 1, scale: 1 }}
+				// animate={{ opacity: 1, scale: 1 }}
 				transition={{
 					duration: 0.1,
 					type: "spring",

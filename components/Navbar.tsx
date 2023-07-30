@@ -43,6 +43,13 @@ const Navbar = () => {
               whileHover={{ scale: 1.2 }}
               className="lg ease-in-out"
             >
+              <Link href={"#Alumni"}>Alumni</Link>
+            </motion.li>
+            <motion.li
+              transition={{ delay: 0.1, duration: 0.1 }}
+              whileHover={{ scale: 1.2 }}
+              className="lg ease-in-out"
+            >
               <Link href={"#Events"}>Events</Link>
             </motion.li>
             <motion.li
@@ -55,7 +62,7 @@ const Navbar = () => {
             <motion.button
               type="button"
               transition={{ delay: 0.1, duration: 0.1 }}
-              whileInView={{ textShadow: "0px 0px 8px rgb(255,255,255)" }}
+              animate={{ textShadow: "0px 0px 8px rgb(255,255,255)" }}
               whileHover={{
                 scale: 1.2,
                 // textShadow: "0px 0px 8px rgb(255,255,255)",
@@ -64,7 +71,7 @@ const Navbar = () => {
             >
               <Link
                 href={"#Contact"}
-                className="font-bold text-lg bg-[#003865] text-white hover:text-black py-2 px-4 hover:bg-white delay-150 ease-linear rounded-full"
+                className="font-bold text-lg text-black py-2 px-4 hover:bg-white delay-150 ease-linear rounded-full"
               >
                 Contact
               </Link>

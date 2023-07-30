@@ -37,7 +37,7 @@ const Contact = () => {
     initial: {
       opacity: 0,
     },
-    whileInView: {
+    animate: {
       opacity: 1,
       transition: {
         duration: 1,
@@ -51,7 +51,7 @@ const Contact = () => {
     <motion.div
       variants={animation}
       initial="initial"
-      whileInView="whileInView"
+      animate="animate"
       className="grid md:grid-cols-2 grid-cols-1 bg-[#003865]"
       id="Contact"
     >
