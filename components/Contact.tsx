@@ -86,7 +86,7 @@ const Contact = () => {
               value={email}
               onChange={handleEmailChange}
               placeholder="Enter College Mail"
-              className="text-sans w-full mx-auto rounded-full p-3 my-5"
+              className="text-sans w-full mx-auto rounded-xl p-3 my-5"
               required
             />
           </div>
@@ -98,7 +98,7 @@ const Contact = () => {
               value={name}
               onChange={handleNameChange}
               placeholder="Enter Your Name"
-              className="text-sans w-full mx-auto rounded-full p-3 my-5"
+              className="text-sans w-full mx-auto rounded-xl p-3 my-5"
               required
             />
           </div>

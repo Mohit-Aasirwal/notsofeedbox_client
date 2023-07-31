@@ -80,11 +80,11 @@ const Alumni = () => {
       <h2 className="text-6xl text-primary font-extrabold w-[90%] mx-auto">
         Our Alumni
       </h2>
-      <div className="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 w-[90%] mx-auto gap-6 my-6">
+      <div className="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2  w-[90%] overflow-y-scroll md:h-auto scrollbar-hide mx-auto gap-6 my-6">
         {alumni.map((alum, id) => (
           <div
             key={id}
-            className="max-w-sm rounded overflow-hidden shadow-lg border-2 border-neutral"
+            className="max-w-sm rounded-xl overflow-hidden shadow-lg border-2 border-primary"
           >
             <Image
               className="w-full"

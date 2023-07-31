@@ -38,10 +38,10 @@ const Landing = () => {
             initial={{ x: -1000, opacity: 0.5 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ delay: 1.5, duration: 3 }}
-            className="flex flex-col md:h-screen md:justify-end md:w-1/2 md:-mt-10 -my-8 items-start md:mx-10 mx-5 md:space-y-10 space-y-5"
+            className="flex flex-col my-10 md:h-screen md:justify-end md:w-1/2 md:-mt-10 items-start md:mx-10 mx-5 md:space-y-10 space-y-5"
           >
             <h1
-              className="font-inter  drop-shadow-2xl md:text-6xl text-base md:text-white text-black bg-white bg-opacity-50 md:bg-opacity-0 rounded-md"
+              className="font-inter p-2 drop-shadow-2xl md:text-6xl text-base md:text-white text-black bg-white bg-opacity-50 md:bg-opacity-0 rounded-md"
               style={{ fontWeight: 900 }}
               color="red"
               // transition={{ duration: 1 }}
@@ -51,7 +51,7 @@ const Landing = () => {
             </h1>
             <motion.p
               animate={{ x: [-1000, 0] }}
-              className="text-xs md:text-base font-sans text-black font-bold md:text-white"
+              className="text-xs md:text-base font-sans text-white drop-shadow-2xl font-bold md:text-white"
             >
               {/* {hero[0].attributes.Description} */} Empowering college
               students for a brighter tomorrow

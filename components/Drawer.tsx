@@ -40,13 +40,13 @@ const Drawer = () => {
             className="flex flex-col justify-start space-y-10 mx-3 my-10 font-semibold"
           >
             <li className="hover:underline hover:text-lg ease-in-out">
+              <Link href={"#Stats"}>Stats</Link>
+            </li>
+            <li className="hover:underline hover:text-lg ease-in-out">
               <Link href={"#About"}>Story</Link>
             </li>
             <li className="hover:underline hover:text-lg ease-in-out">
-              <Link href={"#Achievements"}>Achievements</Link>
-            </li>
-            <li className="hover:underline hover:text-lg ease-in-out">
-              <Link href={"#Events"}>Events</Link>
+              <Link href={"#Alumni"}>Alumni</Link>
             </li>
             <li className="hover:underline hover:text-lg ease-in-out">
               <Link href={"#People"}>People</Link>
