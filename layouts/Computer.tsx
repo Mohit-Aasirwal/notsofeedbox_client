@@ -22,12 +22,22 @@ const Computer = ({
 	return (
 		<div>
 			<Navbar />
-			<Landing />
-			<Stats stat={stat} />
-			<About timeline={timeline} />
-			<Achievement achievement={achievement} />
-			<UpcomingEve events={event} />
-			<People />
+			<Landing
+			// hero={hero}
+			/>
+			<Stats
+			// stat={stat}
+			/>
+			<About
+			// timeline={timeline}
+			/>
+			<Achievement
+			// achievement={achievement}
+			/>
+			{/* <UpcomingEve events={event} /> */}
+			<People
+			// team={team}
+			/>
 			<Contact />
 			<Footer />
 		</div>

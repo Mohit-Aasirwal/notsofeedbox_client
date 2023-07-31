@@ -1,16 +1,16 @@
 import { motion } from "framer-motion";
 
 const pathVariants = {
-  hidden: {
-    pathLength: 0,
-  },
-  visible: {
-    pathLength: 1,
-    transition: {
-      duration: 5,
-      ease: "easeInOut",
-    },
-  },
+	hidden: {
+		pathLength: 0,
+	},
+	visible: {
+		pathLength: 1,
+		transition: {
+			duration: 5,
+			ease: "easeInOut",
+		},
+	},
 };
 const Line = () => (
   <svg
