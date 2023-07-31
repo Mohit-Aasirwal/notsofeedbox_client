@@ -19,12 +19,12 @@ const Landing = () => {
         <Image
           priority
           src={
-            "/group.png"
+            "/award.png"
             // process.env.NEXT_PUBLIC_API_BASE_URL +
             // hero[0].attributes.Hero_Img.data.attributes.url
           }
           alt="group"
-          className="w-full h-max md:h-screen"
+          className="w-full md:object-cover h-max md:h-screen"
           width={1200}
           height={547}
         />
@@ -47,15 +47,14 @@ const Landing = () => {
               // transition={{ duration: 1 }}
               // whileHover={{ fontSize: 2 }}
             >
-              Welcome To <br />
-              FeedBox Club
+              College Clubs <br /> by FeedBox
             </h1>
             <motion.p
               animate={{ x: [-1000, 0] }}
               className="text-xs md:text-base font-sans text-black font-bold md:text-white"
             >
-              {/* {hero[0].attributes.Description} */} Where Creativity Meets
-              Digital Strategy
+              {/* {hero[0].attributes.Description} */} Empowering college
+              students for a brighter tomorrow
             </motion.p>
             <motion.button
               whileHover={{
@@ -69,7 +68,7 @@ const Landing = () => {
               className="rounded-full hover:bg-gradient-to-t from-primary to-secondary  w-fit bg-white py-2 px-3 hidden md:flex"
             >
               <Link href={"#About"} className="">
-                Learn What&apos;s Next
+                Start the Journey
                 <p className="inline-flex">→</p>
               </Link>
             </motion.button>
