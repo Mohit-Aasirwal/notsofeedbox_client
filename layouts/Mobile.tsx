@@ -16,8 +16,12 @@ const Mobile = ({ hero, stat, timeline, event, achievement, team }: layout) => {
 		<div>
 			<Drawer />
 			<Carousel images={images} />
-			<About timeline={timeline} />
-			<Stats stat={stat} />
+			<About
+			// timeline={timeline}
+			/>
+			<Stats
+			// stat={stat}
+			/>
 		</div>
 	);
 };

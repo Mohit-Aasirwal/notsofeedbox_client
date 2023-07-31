@@ -34,6 +34,7 @@ const pathVariants = {
 
 const ConnectText = () => (
   <motion.svg
+    className="w-60 md:ml-0 md:w-full"
     variants={svgVariants}
     initial="initial"
     animate="visible"
