@@ -88,7 +88,7 @@ const Contact = () => {
 							id="email"
 							name="email"
 							placeholder="Enter College Mail"
-							className="text-sans w-full mx-auto rounded-full p-3 my-5"
+							className="text-sans w-full mx-auto rounded-full p-3 my-5 px-6"
 							required
 						/>
 					</div>
@@ -101,7 +101,7 @@ const Contact = () => {
 							value={name}
 							onChange={handleNameChange}
 							placeholder="Enter Your Name"
-							className="text-sans w-full mx-auto rounded-full p-3 my-5"
+							className="text-sans w-full mx-auto rounded-full p-3 my-5 px-6"
 							required
 						/>
 					</div>
@@ -184,7 +184,7 @@ const Contact = () => {
 							name="message"
 							onChange={handleMessageChange}
 							placeholder="Why do you want to open our club in your college?"
-							className="text-sans w-full mx-auto rounded-xl h-56 p-3 my-5"
+							className="text-sans w-full mx-auto rounded-xl h-56 p-3 my-5 px-6"
 							required
 						/>
 					</div>
